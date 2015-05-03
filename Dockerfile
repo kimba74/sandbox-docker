@@ -5,4 +5,6 @@ USER root
 
 RUN mkdir -p /opt/sandbox
 
+WORKDIR /opt/sandbox/
+
 ENV SNDBX_HOME /opt/sandbox
