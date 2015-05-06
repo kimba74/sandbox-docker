@@ -20,5 +20,8 @@ EXPOSE 8090
 RUN mkdir -p /data/volume1 /data/volume2 /data/volume3
 VOLUME ["/data/volume1", "/data/volume2", "/data/volume3"]
 
-# Set default command
-CMD ["ping", "www.google.com"]
+# Setting the entry point for the image (as per "best practices" the main command of the image)
+ENTRYPOINT ["ping"] 
+
+# Set default attributes for the command
+CMD ["www.google.com"]
