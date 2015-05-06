@@ -16,5 +16,9 @@ ENV SNDBX_HOME /opt/sandbox
 # Expose port 8090
 EXPOSE 8090
 
+# Creating three volumes for the container
+RUN mkdir -p /data/volume1 /data/volume2 /data/volume3
+VOLUME ["/data/volume1", "/data/volume2", "/data/volume3"]
+
 # Set default command
 CMD ["ping", "www.google.com"]
