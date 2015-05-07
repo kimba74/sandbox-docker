@@ -24,4 +24,4 @@ VOLUME ["/data/volume1", "/data/volume2", "/data/volume3"]
 ENTRYPOINT ["ping"] 
 
 # Set default attributes for the command
-CMD ["www.google.com"]
+CMD ["--help"]
