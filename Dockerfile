@@ -13,6 +13,10 @@ WORKDIR /opt/sandbox/
 # Set the environment variable SNDBX_HOME
 ENV SNDBX_HOME /opt/sandbox
 
+# Setting labels on this image
+LABEL com.soabridge.docker.container.name="Sandbox Docker" \
+      com.soabridge.docker.container.version=0.1.4-SNAPSHOT
+
 # Expose port 8090
 EXPOSE 8090
 
