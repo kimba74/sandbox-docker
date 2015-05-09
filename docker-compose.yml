@@ -1,0 +1,6 @@
+sandbox:
+  build:
+  links:
+   - database
+database:
+  image: postgres   
