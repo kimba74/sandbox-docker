@@ -18,7 +18,7 @@ LABEL com.soabridge.docker.container.name="Sandbox Docker" \
       com.soabridge.docker.container.version=0.1.4-SNAPSHOT
 
 # Expose port 8090
-EXPOSE 8090
+EXPOSE 8090 9090
 
 # Creating three volumes for the container
 RUN mkdir -p /data/volume1 /data/volume2 /data/volume3
