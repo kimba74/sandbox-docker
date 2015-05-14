@@ -21,11 +21,10 @@ LABEL com.soabridge.docker.container.name="Sandbox Docker" \
 EXPOSE 8090 9090
 
 # Creating three volumes for the container
-RUN mkdir -p /data/volume1 /data/volume2 /data/volume3
 VOLUME ["/data/volume1", "/data/volume2", "/data/volume3"]
 
 # Setting the entry point for the image (as per "best practices" the main command of the image)
 ENTRYPOINT ["ping"] 
 
 # Set default attributes for the command
-CMD ["--help"]
+CMD ["-h"]
